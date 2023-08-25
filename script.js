@@ -1,7 +1,7 @@
 const tabuleiro = document.querySelector(".tabuleiro");
 const player1 = document.getElementById("player1");
 const player2 = document.getElementById("player2");
-const win = document.getElementById("win"); //
+const win = document.getElementById("win");
 const btnReset = document.getElementById("reset");
 let cont1 = 1;
 let cont2 = 1;
@@ -28,7 +28,6 @@ function evento(ev) {
     ev.target.removeEventListener("click", evento);
     player1.innerText = "\nplayer 1";
     player2.innerText = "vez de:\nplayer 2";
-
     for (let i = 0; i < array.length; i++) {
       for (let j = 0; j < array[i].length; j++) {
         if (array[i][j] === ev.target.dataset.pos) {
@@ -51,11 +50,9 @@ function evento(ev) {
       }
     }
   }
-
   if (win.innerText === "Player 1 wins" || win.innerText === "Player 2 wins") {
     resetTabuleiro();
   }
-
   console.table(array);
   if (
     (array[0][0] === array[1][1] && array[0][0] === array[2][2]) ||
@@ -102,7 +99,6 @@ function resetTabuleiro() {
   }
   campos.forEach((container) => {
     const x = container.querySelector("h4");
-
     if (x) {
       container.removeChild(x);
     }
@@ -112,10 +108,8 @@ function resetTabuleiro() {
     container.addEventListener("click", evento);
     player1.innerText = "vez de:\nplayer 1";
     player2.innerText = "\nplayer 2";
-
     win.innerText = "-------------";
   });
-
   let h = 0;
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < array[i].length; j++) {
