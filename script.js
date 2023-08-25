@@ -63,13 +63,9 @@ function evento(ev) {
     (array[0][0] === array[1][0] && array[0][0] === array[2][0])
   ) {
     if (array[0][0] === "X") {
-      win.innerText = "Player 1 wins";
-      contador1.innerText = cont1;
-      cont1++;
+      ganhador1();
     } else {
-      win.innerText = "Player 2 wins";
-      contador2.innerText = cont2;
-      cont2++;
+      ganhador2();
     }
   }
   // outro if
@@ -79,13 +75,9 @@ function evento(ev) {
     (array[0][1] === array[1][1] && array[1][1] === array[2][1])
   ) {
     if (array[1][1] === "X") {
-      win.innerText = "Player 1 wins";
-      contador1.innerText = cont1;
-      cont1++;
+      ganhador1();
     } else {
-      win.innerText = "Player 2 wins";
-      contador2.innerText = cont2;
-      cont2++;
+      ganhador2();
     }
   }
   // outro if
@@ -94,13 +86,9 @@ function evento(ev) {
     (array[0][2] === array[1][2] && array[0][2] === array[2][2])
   ) {
     if (array[2][2] === "X") {
-      win.innerText = "Player 1 wins";
-      contador1.innerText = cont1;
-      cont1++;
+      ganhador1();
     } else {
-      win.innerText = "Player 2 wins";
-      contador2.innerText = cont2;
-      cont2++;
+      ganhador2();
     }
   }
 }
@@ -135,4 +123,16 @@ function resetTabuleiro() {
       h++;
     }
   }
+}
+
+function ganhador1() {
+  win.innerText = "Player 1 wins";
+  contador1.innerText = cont1;
+  cont1++;
+}
+
+function ganhador2() {
+  win.innerText = "Player 2 wins";
+  contador2.innerText = cont2;
+  cont2++;
 }
