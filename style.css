@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a7a7a7;
+}
+
+.title {
+  font-family: "Montserrat", Arial, Helvetica;
+  font-weight: 800;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9f9f9;
+}
+
+#win {
+  font-family: "Roboto", Arial, Helvetica;
+  font-weight: 500;
+  color: #f9f9f9;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #a7a7a7;
+  border: 2px solid #f9f9f9;
+}
+
+.tabuleiro {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+}
+
+h3 {
+  font-family: "Roboto", Arial, Helvetica;
+  margin: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f9f9f9;
+}
+
+h4 {
+  font-size: 4em;
+  color: #343434;
+}
+
+#campo1 {
+  border-top: none;
+  border-left: none;
+}
+#campo2 {
+  border-top: none;
+}
+#campo3 {
+  border-top: none;
+  border-right: none;
+}
+#campo4 {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+#campo5 {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+#campo6 {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+#campo7 {
+  border-bottom: none;
+  border-left: none;
+}
+#campo8 {
+  border-bottom: none;
+}
+#campo9 {
+  border-bottom: none;
+  border-right: none;
+}
+
+#reset {
+  font-family: "Roboto", Arial, Helvetica;
+  background-color: #6f09db;
+  border: none;
+  border-radius: 5px;
+  color: #f9f9f9;
+  margin: 10px;
+  margin-left: 20px;
+  font-size: 17px;
+  padding: 10px 35px;
+  text-align: center;
+  width: 17%;
+}
+
+#reset:hover {
+  background-color: transparent;
+  border: 1px solid #6f09db;
+  box-shadow: 0 0 20px 5px #6f09db;
+  transition: 80ms linear;
+  transform: translate(-10px);
+  cursor: pointer;
+}

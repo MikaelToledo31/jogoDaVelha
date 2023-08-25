@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Jogo da velha</h1>
+      <hr />
+    </header>
+    <h2 id="win">-------------</h2>
+    <main class="main">
+      <section>
+        <h3 id="player1">vez de:<br />player 1</h3>
+        <h3 id="contador1">0</h3>
+      </section>
+      <section class="tabuleiro">
+        <div class="container" data-pos="0" id="campo1"></div>
+        <div class="container" data-pos="1" id="campo2"></div>
+        <div class="container" data-pos="2" id="campo3"></div>
+        <div class="container" data-pos="3" id="campo4"></div>
+        <div class="container" data-pos="4" id="campo5"></div>
+        <div class="container" data-pos="5" id="campo6"></div>
+        <div class="container" data-pos="6" id="campo7"></div>
+        <div class="container" data-pos="7" id="campo8"></div>
+        <div class="container" data-pos="8" id="campo9"></div>
+      </section>
+      <section>
+        <h3 id="player2"><br />player 2</h3>
+        <h3 id="contador2">0</h3>
+      </section>
+    </main>
+    <section><button id="reset">Game reset</button></section>
+  </body>
+</html>
